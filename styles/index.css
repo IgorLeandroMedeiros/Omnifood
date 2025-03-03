@@ -1,5 +1,90 @@
+/* 
+
+--- 01 Typography System ---
+
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      font Weights:
+      Default: 400
+      100 / 200 / 300 / 400 / 500 / 600 / 700 / 800 / 900
+
+      -line Heights:
+      Default: 1
+      1 / 1.25 / 1.5 / 1.75 / 2
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      --- 02 Color System ---
+      - Primary: #e67e22
+      - Tints:
+      - Shades:
+      - Accents:
+      - Grays:
+
+
+      --05 Shadows--
+
+
+      --06 Border-Radius--
+
+
+      /-----------------------------------//--------------------------------/
+      <--07 White Space-->
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      /-----------------------------------//--------------------------------/
+
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  /* Gray */
+  --gray900: #212529;
+  --gray800: #343a40;
+  --gray700: #495057;
+  --gray600: #868e96;
+  --gray500: #adb5bd;
+  --gray400: #ced4da;
+  --gray300: #dee2e6;
+  --gray200: #e9ecef;
+  --gray100: #f1f3f5;
+  --gray000: #f8f9fa;
+
+  /* Orange */
+  --orangeOG: #e67e22;
+  --orange10D: #cf711f;
+  --orange20D: #b8651b;
+  --orange30D: #a15818;
+  --orange40D: #8a4c14;
+  --orange50d: #733f11;
+  --orange60d: #5c320e;
+  --orange70d: #45260a;
+  --orange80d: #2e1907;
+  --orange90d: #170d03;
+
+  --orange10l: #e67e22;
+  --orange20l: #e98b38;
+  --orange30l: #eb984e;
+  --orange40l: #eea564;
+  --orange50l: #f0b27a;
+  --orange60l: #f3bf91;
+  --orange70l: #f5cba7;
+  --orange80l: #f8d8bd;
+  --orange90l: #fae5d3;
+  --orange100l: #fdf2e9;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--gray700);
 }
