@@ -45,6 +45,12 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 10px / 16px = 0.625 = 62.5%  */
+  /* Percentage of user's browser font-size setting */
+  /* Value 10pxs */
+  font-size: 62.5%;
+}
 :root {
   /* Gray */
   --gray900: #212529;
@@ -87,4 +93,16 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--gray700);
+}
+
+.hero {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-img {
+  width: 100%;
 }
