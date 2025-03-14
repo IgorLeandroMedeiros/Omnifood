@@ -40,6 +40,14 @@
   --orange80l: #f8d8bd;
   --orange90l: #fae5d3;
   --orange100l: #fdf2e9;
+
+  /* Green */
+
+  --green500: #51cf66;
+  --lime500: #94d82d;
+
+  /* Yellow */
+  --yellow500: #fcc419;
 }
 
 * {
@@ -273,3 +281,111 @@
 /* ********************************** */
 /* HOW WORKS SECTIONS END!! */
 /* ********************************** */
+
+/* ********************************** */
+/* Meals SECTIONS !! */
+/* ********************************** */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem var(--gray300);
+}
+.meal-content {
+  padding: 3.2rem 4.8rem;
+}
+.meal-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  color: var(--gray800);
+
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.6rem;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.tag--vegetarian {
+  background-color: var(--green500);
+}
+.tag--vegan {
+  background-color: var(--lime500);
+}
+.tag--paleo {
+  background-color: var(--yellow500);
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: var(--gray800);
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--orangeOG);
+}
+
+.meal-img {
+  /* border-top-left-radius: 11px; */
+  /* border-top-right-radius: 11px; */
+  /* OR use OVERFLOW:HIDDEN */
+  width: 100%;
+}
+
+/* 1:46 */
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--orangeOG);
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
