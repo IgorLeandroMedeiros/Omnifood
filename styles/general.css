@@ -90,26 +90,28 @@ html {
   --orange20D: #b8651b;
   --orange30D: #a15818;
   --orange40D: #8a4c14;
-  --orange50d: #733f11;
-  --orange60d: #5c320e;
-  --orange70d: #45260a;
-  --orange80d: #2e1907;
-  --orange90d: #170d03;
+  --orange50D: #733f11;
+  --orange60D: #5c320e;
+  --orange70D: #45260a;
+  --orange80D: #2e1907;
+  --orange90D: #170d03;
 
-  --orange10l: #e67e22;
-  --orange20l: #e98b38;
-  --orange30l: #eb984e;
-  --orange40l: #eea564;
-  --orange50l: #f0b27a;
-  --orange60l: #f3bf91;
-  --orange70l: #f5cba7;
-  --orange80l: #f8d8bd;
-  --orange90l: #fae5d3;
-  --orange100l: #fdf2e9;
+  --orange10L: #e67e22;
+  --orange20L: #e98b38;
+  --orange30L: #eb984e;
+  --orange40L: #eea564;
+  --orange50L: #f0b27a;
+  --orange60L: #f3bf91;
+  --orange70L: #f5cba7;
+  --orange80L: #f8d8bd;
+  --orange90L: #fae5d3;
+  --orange100L: #fdf2e9;
 
   /* Green */
 
-  --green500: #51cf66;
+  --tag--vegetarian: #51cf66;
+  --tag--vegan: #94d82d;
+  --tag--paleo: #ffd43b;
 }
 
 body {
@@ -232,6 +234,26 @@ body {
 .link:active {
   color: var(--orange10D);
   border-bottom: 1px solid transparent;
+}
+/* List Components all */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--orangeOG);
 }
 
 /* Helper */

@@ -1,60 +1,11 @@
+@import url("general.css");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-:root {
-  /* Fonts */
-  --inter: "Inter", sans-serif;
-  --rubik: "Rubik", sans-serif;
-  /* Gray */
-  --gray900: #212529;
-  --gray800: #343a40;
-  --gray700: #495057;
-  --gray600: #868e96;
-  --gray500: #adb5bd;
-  --gray400: #ced4da;
-  --gray300: #dee2e6;
-  --gray200: #e9ecef;
-  --gray100: #f1f3f5;
-  --gray000: #f8f9fa;
 
-  --gray333: #333;
-  --gray555: #555;
-
-  /* Orange */
-  --orangeOG: #e67e22;
-  --orange10D: #cf711f;
-  --orange20D: #b8651b;
-  --orange30D: #a15818;
-  --orange40D: #8a4c14;
-  --orange50d: #733f11;
-  --orange60d: #5c320e;
-  --orange70d: #45260a;
-  --orange80d: #2e1907;
-  --orange90d: #170d03;
-
-  --orange10l: #e67e22;
-  --orange20l: #e98b38;
-  --orange30l: #eb984e;
-  --orange40l: #eea564;
-  --orange50l: #f0b27a;
-  --orange60l: #f3bf91;
-  --orange70l: #f5cba7;
-  --orange80l: #f8d8bd;
-  --orange90l: #fae5d3;
-  --orange100l: #fdf2e9;
-
-  /* Green */
-
-  --green500: #51cf66;
-  --lime500: #94d82d;
-
-  /* Yellow */
-  --yellow500: #fcc419;
-}
-
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* -------------------------------!!!!!!!--------------------------- */
 
@@ -63,7 +14,7 @@
 /* ********************************** */
 
 .header {
-  background-color: var(--orange100l);
+  background-color: var(--orange100L);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,7 +77,7 @@
 /* HERO Section */
 /* ********************************** */
 .section-hero {
-  background-color: var(--orange100l);
+  background-color: var(--orange100L);
   padding: 4.8rem 0 9.6rem 0;
 }
 .hero {
@@ -166,7 +117,7 @@
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid var(--orange100l);
+  border: 3px solid var(--orange100L);
 }
 
 .delivered-img:last-child {
@@ -263,14 +214,14 @@
 .step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
-  background-color: var(--orange100l);
+  background-color: var(--orange100L);
   z-index: -2;
 }
 
 .step-img-box::after {
   width: 45%;
   padding-bottom: 45%;
-  background-color: var(--orange90l);
+  background-color: var(--orange90L);
   z-index: -1;
 }
 
@@ -322,13 +273,13 @@
 }
 
 .tag--vegetarian {
-  background-color: var(--green500);
+  background-color: var(--tag-vegetarian);
 }
 .tag--vegan {
-  background-color: var(--lime500);
+  background-color: var(--tag--vegan);
 }
 .tag--paleo {
-  background-color: var(--yellow500);
+  background-color: var(--tag--paleo);
 }
 
 .meal-title {
@@ -364,7 +315,7 @@
 }
 
 /* 1:46 */
-
+/* Remove list section to set ing general.css
 .list {
   list-style: none;
   display: flex;
@@ -384,7 +335,7 @@
   height: 3rem;
   color: var(--orangeOG);
 }
-
+ */
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
@@ -399,7 +350,7 @@
 /* ********************************** */
 
 .section-testimonials {
-  background-color: var(--orange100l);
+  background-color: var(--orange100L);
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -454,4 +405,77 @@
 .gallery-img:hover {
   transform: scale(1.1);
   filter: saturate(120%);
+}
+
+/* ********************************** */
+/* Testimonials SECTIONS END !! */
+/* ********************************** */
+
+/* ********************************** */
+/* Pricing SECTIONS !! */
+/* ********************************** */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.princing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+.pricing-plan--starter {
+  justify-self: end;
+  padding: 4.6rem;
+  border: 2px solid var(--orange100L);
+}
+.pricing-plan--complete {
+  position: relative;
+  padding: 4.8rem;
+  background-color: var(--orange100L);
+  overflow: hidden;
+}
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  background-color: var(--tag--paleo);
+  color: var(--gray333);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: var(--orange10D);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: var(--gray333);
+  margin-bottom: 1.6rem;
+}
+
+.section-pricing-sign {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--gray600);
+}
+.plan-sign-up {
+  margin-top: 4.8rem;
+  text-align: center;
 }
