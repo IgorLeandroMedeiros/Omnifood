@@ -93,8 +93,9 @@
 
 .hero-description {
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 4.8rem;
+  color: var(--gray555);
 }
 
 .hero-img {
@@ -102,9 +103,9 @@
 }
 
 .delivered-meals {
-  margin-top: 8rem;
   display: flex;
   align-items: center;
+  margin-top: 8rem;
   gap: 1.6rem;
 }
 
@@ -141,7 +142,7 @@
 /* ********************************** */
 /* Featured in Section!! */
 /* ********************************** */
-.seaction-featured {
+.section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
 
