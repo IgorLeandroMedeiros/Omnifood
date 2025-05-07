@@ -480,3 +480,34 @@
   margin-top: 4.8rem;
   text-align: center;
 }
+/* ********************************** */
+/* Pricing SECTIONS END!! */
+/* ********************************** */
+
+/* ********************************** */
+/* Features SECTIONS !! */
+/* ********************************** */
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.feature-icon {
+  background-color: var(--orange100L);
+  color: var(--orangeOG);
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--gray800);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  color: var(--gray700);
+}

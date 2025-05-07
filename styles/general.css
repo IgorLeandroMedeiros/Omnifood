@@ -260,7 +260,7 @@ body {
   color: var(--orangeOG);
 }
 
-/* Helper */
+/* Helper / Settings Classes */
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
