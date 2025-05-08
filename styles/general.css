@@ -35,7 +35,7 @@
 
 
       --05 Shadows--
-
+       0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
 
       --06 Border-Radius--
 
@@ -56,6 +56,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted var(--orange10L); */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem var(--orangeOG-Transparency);
 }
 
 html {
@@ -106,6 +113,11 @@ html {
   --orange80L: #f8d8bd;
   --orange90L: #fae5d3;
   --orange100L: #fdf2e9;
+
+  /* Orange Transparency */
+  --orange20L-Transparency: rgba(233, 139, 56, 0.2);
+  --orangeOG-Transparency: rgba(230, 125, 34, 0.2);
+  --orange100L-Transparency: rgba(253, 242, 233, 0.5);
 
   /* Green */
 
@@ -190,21 +202,28 @@ body {
 }
 
 /* BTNS Styles */
+.btn,
 .btn:link,
 .btn:visited {
-  color: var(--gray000);
+  display: inline-block;
+  text-decoration: none;
+
   border: none;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s;
+  /* only for .btn */
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
 }
 
 .btn--full:link,
 .btn--full:visited {
+  color: var(--gray000);
   background-color: var(--orangeOG);
 }
 .btn--full:hover,
@@ -222,6 +241,17 @@ body {
   color: var(--gray900);
   background-color: var(--orange100l);
   box-shadow: inset 0 0 0 3px var(--gray000);
+}
+
+.btn--form {
+  background-color: var(--orange70D);
+  color: var(--orange100L);
+  align-self: end;
+  padding: 1.2rem !important;
+}
+.btn--form:hover {
+  background-color: var(--gray000);
+  color: inherit;
 }
 
 .link:link,

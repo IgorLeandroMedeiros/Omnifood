@@ -242,10 +242,10 @@
   padding: 9.6rem 0;
 }
 .meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .meal:hover {
@@ -510,4 +510,92 @@
 .feature-text {
   font-size: 1.8rem;
   color: var(--gray700);
+}
+/* ********************************** */
+/* Features SECTIONS END !! */
+/* ********************************** */
+
+/* ********************************** */
+/* Features SECTIONS !! */
+/* ********************************** */
+/* ********************************** */
+/* CTA SECTION ! */
+/* ********************************** */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: var(--orangeOG); */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, var(--orange20L), var(--orangeOG));
+  overflow: hidden;
+  /* Temp */
+  height: 50rem;
+}
+
+.cta-text-box {
+  color: var(--orange70D);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      var(--orange20L-Transparency),
+      var(--orangeOG-Transparency)
+    ),
+    url(../assets/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cta-form */
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  color: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 9px;
+  background-color: var(--orange100L);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: var(--gray500);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem var(--orange100L-Transparency);
 }
