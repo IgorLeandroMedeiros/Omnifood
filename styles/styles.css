@@ -509,6 +509,7 @@
 }
 .feature-text {
   font-size: 1.8rem;
+  line-height: 1.8;
   color: var(--gray700);
 }
 /* ********************************** */
@@ -516,14 +517,11 @@
 /* ********************************** */
 
 /* ********************************** */
-/* Features SECTIONS !! */
-/* ********************************** */
-/* ********************************** */
 /* CTA SECTION ! */
 /* ********************************** */
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12rem 0;
 }
 .cta {
   display: grid;
@@ -531,7 +529,11 @@
   /* background-color: var(--orangeOG); */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  background-image: linear-gradient(to right bottom, var(--orange20L), var(--orangeOG));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--orange20L),
+    var(--orangeOG)
+  );
   overflow: hidden;
   /* Temp */
   height: 50rem;
@@ -598,4 +600,81 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem var(--orange100L-Transparency);
+}
+/* ********************************** */
+/* CTA SECTION END ! */
+/* ********************************** */
+
+/* ********************************** */
+/* FOOTER SECTION ! */
+/* ********************************** */
+
+.footer {
+  padding: 12rem 0;
+  border-top: 1px solid var(--gray200);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--gray600);
+  margin-top: auto;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.address {
+  margin-bottom: 2.4rem;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--gray600);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--gray800);
 }
