@@ -71,6 +71,7 @@ html {
   /* Value 10pxs */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 :root {
   /* Fonts */
@@ -130,6 +131,8 @@ body {
   font-family: var(--rubik);
   line-height: 1;
   font-weight: 400;
+  /* Only works if there is nothing absolutely position in to body */
+  overflow-x: hidden;
   /* color: var(--gray700); */
 }
 /* ********************************** */
