@@ -38,7 +38,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -678,3 +678,25 @@
 .footer-link:active {
   color: var(--gray800);
 }
+
+/* Remove */
+
+/* @media (max-width: 1200px) {
+  .section-hero {
+    border: 5px solid blue;
+    background-color: red;
+    color: white;
+  }
+  .hero-description {
+    color: aqua;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero {
+    border: 5px dashed yellowgreen;
+  }
+  .hero-description {
+    color: var(--gray700);
+  }
+} */
