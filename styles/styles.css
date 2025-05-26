@@ -68,6 +68,25 @@
 .main-nav-link.nav-cta:active {
   background-color: var(--orange10D);
 }
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent !important;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--grey333);
+}
+
+/*  <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+*/
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 
 /* ********************************** */
 /* NAVIGATION SECTIONS END!! */
@@ -274,7 +293,7 @@
 }
 
 .tag--vegetarian {
-  background-color: var(--tag-vegetarian);
+  background-color: var(--tag--vegetarian);
 }
 .tag--vegan {
   background-color: var(--tag--vegan);
@@ -525,6 +544,7 @@
 }
 .cta {
   display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
   grid-template-columns: 2fr 1fr;
   /* background-color: var(--orangeOG); */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
@@ -536,7 +556,7 @@
   );
   overflow: hidden;
   /* Temp */
-  height: 50rem;
+  /* height: 50rem; */
 }
 
 .cta-text-box {
