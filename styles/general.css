@@ -246,7 +246,7 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   color: var(--gray900);
-  background-color: var(--orange100l);
+  background-color: var(--orange100L);
   box-shadow: inset 0 0 0 3px var(--gray000);
 }
 
