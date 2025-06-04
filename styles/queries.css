@@ -74,6 +74,7 @@ EX: 1350 / 16 = 84EM
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
+    gap: 6.4rem;
   }
   .hero-text-box,
   .hero-image-box {
@@ -197,6 +198,64 @@ EX: 1350 / 16 = 84EM
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .section-hero {
+    background-color: var(--orange100L);
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logo-featured-in {
+    height: 1.2rem;
+  }
+  .app-pic-1 {
+    grid-row: 1;
+  }
+  .app-pic-3 {
+    grid-row: 5;
+  }
+  .step-image-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .img-hidden {
+    display: block;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
   }
 }
 
