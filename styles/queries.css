@@ -119,6 +119,7 @@ EX: 1350 / 16 = 84EM
   /* Mobile Navigation */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
   .header-nav {
     background-color: rgba(255, 255, 255, 0.98);

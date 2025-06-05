@@ -19,8 +19,17 @@ console.log("Hello World!"); //Aula1
   Footer DateYear Updated
   ======================= 
 */
-
 const YearNowEl = document.querySelector("#YearNowDate");
 const YearUpdated = new Date().getFullYear();
 console.log(YearUpdated);
 YearNowEl.textContent = YearUpdated;
+
+/*======================= 
+  Make mobile navigation Work
+  ======================= 
+*/
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerNavEl = document.querySelector(".header");
+btnNavEl.addEventListener("click", () => {
+  headerNavEl.classList.toggle("nav-open");
+});
